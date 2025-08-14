@@ -1,7 +1,7 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'Julian Chengjin Sy',
+  title: 'chengjin.js',
   description:
     "Julian Chengjin Sy's UX Engineer portfolio",
   href: 'https://chengj.in',
