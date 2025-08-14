@@ -67,5 +67,8 @@
         }
       }
     ]
-  }
+  },
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
 }
