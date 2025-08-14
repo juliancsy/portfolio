@@ -13,56 +13,22 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
 <Layout class="max-w-3xl">
   <PageHead slot="head" title="Home" />
   <section>
-    <div class="rounded-lg border">
-      <div class="flex flex-col space-y-1.5 p-6">
-        <h3 class="text-3xl leading-none font-medium">er·u·dite</h3>
-        <p class="text-muted-foreground text-sm">
-          /ˈer(y)əˌdīt/ &bull; <span class="font-medium">adjective</span>
-        </p>
-      </div>
-      <div class="p-6 pt-0">
-        <p class="text-muted-foreground mb-2 text-sm">
-          astro-erudite is an opinionated, unstyled static blogging template
-          built with <Link
-            href="https://astro.build"
-            class="text-foreground"
-            external
-            underline>Astro</Link
-          >, <Link
-            href="https://tailwindcss.com"
-            class="text-foreground"
-            external
-            underline>Tailwind</Link
-          >, and <Link
-            href="https://ui.shadcn.com"
-            class="text-foreground"
-            external
-            underline>shadcn/ui</Link
-          >. Extraordinarily loosely based on the <Link
-            href="https://astro-micro.vercel.app/"
-            class="text-foreground"
-            external
-            underline>Astro Micro</Link
-          > theme.
-        </p>
-        <p class="text-muted-foreground text-sm">
-          To use this template, check out the <Link
-            href="https://github.com/jktrn/astro-erudite"
-            class="text-foreground"
-            underline
-            external>GitHub</Link
-          > repository. To learn more about why this template exists, read this blog
-          post: <Link
-            href="/blog/the-state-of-static-blogs"
-            class="text-foreground"
-            underline>The State of Static Blogs in 2024</Link
-          >.
-        </p>
-      </div>
+    <div class="flex flex-col space-y-1.5 py-6">
+      <h3 class="text-4xl leading-none font-mono font-bold text-primary">I'm <span class="underline">Julian Sy</span></h3>
+      <p class="text-lg font-mono font-bold pl-12">
+        <span class="text-secondary-foreground">&& an aspiring UX Engineer<br /></span>
+        <span class="text-primary-foreground">&& studying UXD @ WGU<br /></span>
+        <span class="text-foreground">&& a bay area native</span>
+      </p>
+    </div>
+    <div class="pl-12 pt-0">
+      <p class="mb-8">
+        I'm a curious creative with a background in front-end dev and customer service dedicated to learning how different people think (and thinking about how to make things work for them)
+      </p>
     </div>
   </section>
   <section class="flex flex-col gap-y-4">
-    <h2 class="text-2xl font-medium">Latest posts</h2>
+    <h2 class="text-2xl font-mono">case studies</h2>
     <ul class="flex flex-col gap-y-4">
       {
         blog.map((post) => (
