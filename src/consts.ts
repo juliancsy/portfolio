@@ -32,16 +32,19 @@ export const NAV_LINKS: SocialLink[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/juliancsy',
+    href: 'https://github.com/',
     label: 'GitHub',
+    user: 'juliancsy',
   },
   {
-    href: 'https://www.linkedin.com/in/juliancsy/',
+    href: 'https://www.linkedin.com/in/',
     label: 'LinkedIn',
+    user: 'juliancsy',
   },
   {
-    href: 'mailto:js@chengj.in',
+    href: 'mailto:',
     label: 'Email',
+    user: 'js@chengj.in',
   },
   // {
   //   href: '/rss.xml',
