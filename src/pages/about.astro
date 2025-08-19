@@ -15,7 +15,7 @@ const projects = await getAllProjects()
 
 <Layout class="max-w-3xl">
   <PageHead slot="head" title="About" />
-  <Breadcrumbs items={[{ label: 'About', icon: 'lucide:zap' }]} />
+  <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
 
   <section>
     <div class="min-w-full">
@@ -26,13 +26,15 @@ const projects = await getAllProjects()
             <span class="text-primary">C</span>
             Sy
           </span>
-          <p class="text-sm leading-0.50 mt-2 sm:mt-4">is an aspiring <strong>UX Developer</strong> currently pursuing a BS UXD at Western Governors University.</p>
+          <p class="text-sm mt-2 sm:mt-4">is an aspiring <strong>UX Developer</strong> currently pursuing a BS UXD at Western Governors University. The foundation for his personal and professional pursuits alike is the search for <strong>understanding</strong>.</p>
+          <p class="text-sm">He wants to understand <strong>people</strong>, whether it's identifying and reducing friction users might encounter or improvising a new subplot when he's running a tabletop RPG. He seeks to know how things actually work in <strong>practice</strong>, programming at work and play to make his own ideas come to life. And while it's important to understand others and how things work, the real <strong>progress</strong> happens when you seek to understand yourself.
+          </p>
         </div>
         <div class="mt-6 sm:mt-0">
           <ContactInfo links={SOCIAL_LINKS} />
           <Button
             variant='secondary'
-            className="mt-6 mx-auto uppercase block sm:w-full"
+            className="mt-3 mx-auto uppercase block sm:w-full"
           >
             <Link href="#">
               <Icon
