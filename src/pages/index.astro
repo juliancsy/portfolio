@@ -12,22 +12,17 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
 
 <Layout class="max-w-3xl">
   <PageHead slot="head" title="Home" />
-  <section>
+  <section class="md:h-[calc(100vh-200px)] place-content-center-safe">
     <div class="flex flex-col space-y-1.5 py-6">
-      <h3 class="text-4xl leading-none font-mono font-bold text-primary">I'm <span class="underline">Julian Sy</span></h3>
-      <p class="text-lg font-mono font-bold pl-12">
-        <span class="text-secondary-foreground">&& an aspiring UX Engineer<br /></span>
+      <h3 class="text-4xl sm:text-6xl md:text-8xl leading-none font-mono font-bold text-primary">I'm <span class="underline">Julian Sy</span></h3>
+      <p class="text-lg sm:text-3xl md:text-4xl font-mono font-bold pl-12 sm:pl-20 md:pl-38 sm:leading-10 md:leading-12">
+        <span class="text-secondary-foreground">&& an aspiring UX Developer<br /></span>
         <span class="text-primary-foreground">&& studying UXD @ WGU<br /></span>
         <span class="text-foreground">&& a bay area native</span>
       </p>
     </div>
-    <div class="pl-12 pt-0">
-      <p class="mb-8">
-        I'm a curious creative with a background in front-end dev and customer service dedicated to learning how different people think (and thinking about how to make things work for them)
-      </p>
-    </div>
   </section>
-  <section class="flex flex-col gap-y-4">
+  <!-- <section class="flex flex-col gap-y-4">
     <h2 class="text-2xl font-mono">case studies</h2>
     <ul class="flex flex-col gap-y-4">
       {
@@ -49,5 +44,5 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
         >
       </Link>
     </div>
-  </section>
+  </section> -->
 </Layout>
