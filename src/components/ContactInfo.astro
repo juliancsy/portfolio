@@ -19,7 +19,7 @@ interface Props {
 const { links } = Astro.props
 ---
 
-<Table className="m-0">
+<Table className="mt-0 mx-auto sm:mx-0">
   <TableHeader>
     <TableRow>
       <TableHead>
@@ -52,6 +52,7 @@ const { links } = Astro.props
           <TableCell className='text-right'>
             <Link
               href={href + user}
+              underline
               external
             >
               {user}
@@ -70,7 +71,7 @@ const { links } = Astro.props
         />
       </TableCell>
       <TableCell>Phone</TableCell>
-      <TableCell>
+      <TableCell className='text-right'>
         <span class="text-foreground">
           +X (XXX) XXX-XXXX
         </span>

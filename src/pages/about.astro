@@ -8,6 +8,7 @@ import { getAllProjects } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
 import ContactInfo from '@/components/ContactInfo.astro'
 import { SOCIAL_LINKS } from '@/consts'
+import { Button } from '@/components/ui/button'
 
 const projects = await getAllProjects()
 ---
@@ -18,11 +19,30 @@ const projects = await getAllProjects()
 
   <section>
     <div class="min-w-full">
-      <div class="prose mb-8 sm:flex sm:gap-12">
-        <div class="mt-0 w-full">
-          <h3 class="mt-2 text-2xl font-mono font-bold uppercase">Julian C Sy</h3>
+      <div class="mb-8 sm:flex sm:gap-12">
+        <div class="prose w-full">
+          <span class="text-4xl font-mono font-bold uppercase pb-0 sm:mb-0 sm:pt-4 sm:pr-3 sm:inline-block sm:float-left">
+            Julian
+            <span class="text-primary">C</span>
+            Sy
+          </span>
+          <p class="text-sm leading-0.50 mt-2 sm:mt-4">is an aspiring <strong>UX Developer</strong> currently pursuing a BS UXD at Western Governors University.</p>
         </div>
-        <ContactInfo links={SOCIAL_LINKS} />
+        <div class="mt-6 sm:mt-0">
+          <ContactInfo links={SOCIAL_LINKS} />
+          <Button
+            variant='secondary'
+            className="mt-6 mx-auto uppercase block sm:w-full"
+          >
+            <Link href="#">
+              <Icon
+                name='lucide:download'
+                class="size-4 inline-block mr-1.5"
+              />
+              PDF Resume
+            </Link>
+          </Button>
+        </div>
       </div>
 
       <!-- <h2 class="mb-4 text-2xl font-medium">Example Projects Listing</h2>
